@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <script>
+        function updateClock() {
+            const options = { timeZone: "Asia/Colombo", hour12: true };
+            const now = new Date().toLocaleString("en-US", { ...options, hour: "2-digit", minute: "2-digit", second: "2-digit" });
+            const date = new Date().toLocaleString("en-US", { ...options, weekday: "long", year: "numeric", month: "long", day: "numeric" });
+
+            document.getElementById("digital-clock").innerHTML = now;
+            document.getElementById("date-display").innerHTML = date;
+        }
+        setInterval(updateClock, 1000);
+    </script>
+</head>
+<body onload="updateClock()">
+
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="php/auth.php?logout=true">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>Dashboard</h2>
+        </header>
+
+        <div class="clock-container">
+            <div id="date-display"></div>
+            <div id="digital-clock"></div>
+        </div>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Total Users</h3>
+                <p>1,234</p>
+            </div>
+            <div class="card">
+                <h3>Orders</h3>
+                <p>567</p>
+            </div>
+            <div class="card">
+                <h3>Revenue</h3>
+                <p>RS 12,345</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK Online STORE</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/61be0c5552.js" crossorigin="anonymous"></script>
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <div class="account-page">
+    <div class="header">
+        <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <a href="index.html">
+            <img src="newlogo1.png" width ="180px "  alt="logo">
+        </a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+        
+            <div class="menu-icon">
+            <i class="fa-solid fa-bars"  onclick="menutoggle()"></i> 
+        </div>
+    
+    </div>
+</div>
+
+<!------- Single  products details ------->
+<div class="product-detail">
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="product5.webp" width="500px" id="productimg">
+
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="stainless-watch1.webp" width="100%" class="small-img">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="stainless-watch2.webp" width="100%" class="small-img">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="stainless-watch3.webp" width="100%" class="small-img">
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <p>Home / Stainless Watch</p>
+            <h1>Boss Stainless Watch</h1>
+            <h4>Rs 10000</h4>
+            <select>
+                <option >Select Colour</option>
+                <option >Black</option>
+                <option >Blue</option>
+                <option >Silver</option>
+                <option >Gold</option>
+            </select>
+            <input type="number" value="1">
+            <a href="cart.html" class="btn" onclick="event.preventDefault(); addToCart(110, 'Boss Stainless Watch', 10000, 1, 'product5.webp')">
+                Add To Cart
+            </a>
+            <h3>Product Detail <i class="fa fa-indent"></i></h3>
+            <p>New with tags: A brand-new, unused, and unworn item (including handmade items) in the original packaging (such as the original box or bag) and/or with the original tags attached. </p>
+        </div>
+    </div>
+</div>
+
+<!------title------>
+
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View more</p>
+    </div> 
+    
+</div>
+
+<!------products------>
+<div class="small-container">
+    
+    <div class="row">
+        <div class="col-4">
+            <a href="casual-shirts.html"> <img src="product4.webp" alt=""></a>
+             <h4>Men Casual Shirts</h4>
+             <div class="rating">
+                 &#9733;
+                 &#9733;
+                 &#9733;
+                 &#9733;
+                 &#10032;
+             </div>
+             <h7>RS 3,000</h7>
+         </div>
+        <div class="col-4">
+                <a href="nike-sneakers.html"><img src="product1.webp" alt=""></a>
+                <h4>Nike Sneakers</h4>
+                <div class="rating">
+                    &#9733;
+                    &#9733;
+                    &#9733;
+                    &#9733;
+                    &#10032;
+                </div>
+                <h7>RS 10,000</h7>
+            </div>
+            <div class="col-4">
+                <a href="hoodie.html"> <img src="product2.webp" alt=""></a>
+                 <h4>Men Caasual Hoodies</h4>
+                 <div class="rating">
+                     &#9733;
+                     &#9733;
+                     &#9733;
+                     &#9733;
+                     &#10032;
+                 </div>
+                 <h7>RS 8,000</h7>
+             </div>
+             <div class="col-4">
+                <a href="cargo-jean.html"><img src="product3.jpg" alt=""></a>
+                <h4>Men Cargo Jeans</h4>
+                <div class="rating">
+                    &#9733;
+                    &#9733;
+                    &#9733;
+                    &#9733;
+                    &#10032;
+                </div>
+                <h7>RS 6,000</h7>
+            </div>
+    </div>
+
+   
+
+</div>
+</div>
+
+<!-------Footer------->
+<div class="footer">
+    <!--div class="container"-->
+        <div class="row">
+            <div class="col">
+            <img src="newlogo1.png" class="logo">
+            <P>Discover top-quality products at unbeatable prices. From electronics to fashion, we have it all! Enjoy fast delivery, secure payments, and exclusive deals. Your perfect shopping experience is just a click away!<P></P>
+            </div>
+            <div class="col">
+                <div class="office">
+                    <h3>Office <div class="underline"><span></span></div></h3>
+                    <p>No 148/1,School Lane,</p>
+                    <p>Halpita,</p>
+                    <p>Polgassowita.</p>
+                    <p class="email-id">samithamadhushanka085@gmail.com</p>
+                    <p>+94 719584458</p>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="links">
+                    <h3>Links <div class="underline"><span></span></div></h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+    
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Opening Hours <div class="underline"><span></span></div></h3>
+                <p>Monday - Friday</p>
+                <p>08:00AM - 3:00PM</p>
+                <p>4:30PM - 10:00PM</p>
+                <div class="social-icon">
+                   <a href="https://www.facebook.com/profile.php?id=61566472516807&mibextid=kFxxJD"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sk_online_store.lk?igsh=MXRzNTl0M2lvd21jeA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://tiktok.com/@sk_online_store.lk?_t=8dmuKfQxFGz&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="http://youtu.be/ScRmG7vB09o"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="http://wa.me/94719584458"><i class="fa-brands fa-whatsapp"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+        <hr>
+    <p class="copyright">Copyright 2024 - SK Online STORE</p>
+    </div>
+</div>
+<!------js for menu toggle------>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+</script>
+
+<!------js for menu toggle Form ------>
+
+<script>
+
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register(){
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(55px)";
+    }
+
+    function Login(){
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(-55px)";
+    }
+</script>
+
+<!------js for product gallery------>
+
+<script>
+ var productimg = document.getElementById ("productimg");
+ var SmallImg = document.getElementsByClassName("small-img");
+
+ SmallImg[0].onclick = function (){
+
+    productimg.src = SmallImg[0].src;
+
+ }
+
+ SmallImg[1].onclick = function (){
+
+productimg.src = SmallImg[1].src;
+
+}
+
+SmallImg[2].onclick = function (){
+
+productimg.src = SmallImg[2].src;
+
+}
+
+</script>
+</body>
+</html>

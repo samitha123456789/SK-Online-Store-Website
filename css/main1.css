@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+
+.contact{
+
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+}
+.contact .contactus{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .contactus h2{
+    font-size: 36px;
+    font-weight: bold;
+    
+}
+.contact .contactus p {
+
+    color: rgb(82, 79, 72);
+}
+.contact-page .container{
+
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-page .container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-page .container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contact-page .container .contactInfo .box .icon{
+
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.contact-page .container .contactInfo .box .text {
+
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contact-page .container .contactInfo .box h3{
+
+    font-weight: 500;
+    color: purple;
+}
+
+.contactForm{
+
+    width: 40%;
+    padding: 40px;
+    background: white;
+}
+.contactForm h2 {
+
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+.contactForm .inputBox{
+
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+ .contactForm .inputBox  input , 
+ .contactForm .inputBox  input textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span {
+
+    position: absolute;
+    left: 0;
+}
+
+.fa-location-dot{
+
+    margin-right: 10px;
+}
+
+.fa-phone{
+
+    margin-right: 10px;
+}
+
+@media (max-width : 800px){
+
+    .contact{
+        padding: 50px;
+    }
+    .container {
+
+        flex-direction: column;
+    }
+    .container .contactInfo {
+
+        width: 100%;
+    }
+}
+
+
